@@ -1,0 +1,213 @@
+@use '_tableWrapper.scss' as *; //tableWrapper
+@use '_variable.scss' as *; //variable
+.loginWrap {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:before {
+    content: '';
+    width: 687px;
+    height: 203px;
+    display: block;
+    background: url(../../images/cms/bg_top.png) 0 0 no-repeat;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+    @media (max-width: $screenXs) {
+      width: 100%;
+      background-size: 100%;
+    }
+  }
+  &:after {
+    content: '';
+    width: 772px;
+    height: 190px;
+    display: block;
+    background: url(../../images/cms/bg_bottom.png) 0 0 no-repeat;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    @media (max-width: $screenXs) {
+      width: 100%;
+      background-size: 100%;
+      background-position: 0 bottom;
+    }
+  }
+  .login {
+    width: 450px;
+    margin: 0 30px;
+    @media (max-width: $screenXs) {
+      width: 100%;
+    }
+    .logo {
+      text-align: center;
+      margin-bottom: 22px;
+      img {
+        max-width: 290px;
+      }
+    }
+    .loginBlock {
+      background: rgba($color: #ffaf00, $alpha: 0.5);
+      border-radius: 20px;
+      padding: 36px 60px;
+      margin-bottom: 22px;
+      @media (max-width: $screenXs) {
+        padding: 30px;
+      }
+      .title {
+        color: $primaryColor;
+        font-weight: bold;
+        font-size: 1.875rem;
+        padding-bottom: 10px;
+        margin-bottom: 14px;
+        border-bottom: 2px solid #fff;
+        letter-spacing: 3px;
+        text-align: center;
+        @media (max-width: $screenXs) {
+          letter-spacing: 0;
+          font-size: 1.6rem;
+        }
+      }
+      .subTitle1 {
+        color: $primaryColor;
+        font-weight: bold;
+        font-size: 1.5rem;
+        letter-spacing: 1px;
+        margin-bottom: 8px;
+        text-align: center;
+      }
+      .subTitle2 {
+        color: $thirdColor;
+        font-size: 0.9375rem;
+        text-align: center;
+        margin-bottom: 8px;
+      }
+      .pic {
+        width: 200px;
+        margin: 0 auto;
+        img {
+          width: 100%;
+        }
+      }
+      .form {
+        .formGrp {
+          color: #302222;
+          margin: 12px 0;
+        }
+        .btnGrp {
+          display: flex;
+          margin: 24px 0 16px 0;
+          gap: 10px;
+          button {
+            flex-grow: 1;
+            margin: 0;
+            max-width: 160px;
+            &:only-child {
+              margin: 0 auto;
+            }
+          }
+        }
+        .username {
+          input {
+            // background: #fff url(../images/icon_user.svg) 16px center no-repeat;
+            // background-size: 15px 17px;
+            // padding-left: 44px;
+          }
+        }
+        .password {
+          position: relative;
+          input {
+            padding-right: 40px;
+            // background: #fff url(../images/icon_pw.svg) 16px center no-repeat;
+            // background-size: 16px 22px;
+            // padding-left: 44px;
+          }
+          button.passwordEye {
+            padding: 0;
+            margin: 0;
+            position: absolute;
+            border: none;
+            color: transparent;
+            width: 26px !important;
+            height: 26px;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: transparent;
+            font-size: 0;
+            &:before {
+              content: '';
+              width: 26px;
+              height: 26px;
+              display: block;
+              opacity: 0.8;
+            }
+            &.show:before {
+              background: url(../../images/icon_eyeOpen.svg) center no-repeat;
+            }
+            &.hide:before {
+              background: url(../../images/icon_eyeClose.svg) center no-repeat;
+            }
+          }
+        }
+        .verification {
+          display: flex;
+          .captcha {
+            margin-left: 8px;
+            margin-right: 8px;
+            height: 44px;
+            img {
+              height: 44px;
+            }
+          }
+          button {
+            font-size: 0;
+            border: 0;
+            width: 44px;
+            height: 44px;
+            line-height: 44px;
+            background: transparent;
+            &:before {
+              content: '';
+              width: 24px;
+              height: 44px;
+              display: block;
+              background: url(../../images/icon_refresh.svg) center no-repeat;
+              background-size: 26px;
+              transition: 0.5s all;
+            }
+            &:focus-visible {
+              outline: $btnBg1 solid 2px;
+              border-radius: 4px;
+            }
+            &:hover,
+            &:focus-visible {
+              &:before {
+                transform: rotate(45deg);
+              }
+            }
+          }
+        }
+        .forgerPW {
+          text-align: center;
+          font-size: 1rem;
+
+          a {
+            color: #391c1c;
+            text-decoration: none;
+            font-weight: bold;
+            &:hover,
+            &:focus-visible {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+  }
+}
