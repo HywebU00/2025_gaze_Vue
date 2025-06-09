@@ -1,53 +1,55 @@
 <template>
-  <div class="indexWrap">
-    <h2>租借者畫面</h2>
-    <table>
-      <tr>
-        <th>頁面名稱</th>
-        <th>橫式</th>
-        <th>直式</th>
-      </tr>
-      <tr v-for="(item, index) in data" :key="index">
-        <td>{{ item.title }}</td>
-        <td>
-          <a :href="`${item.fileLandscape}`">{{ item.name }}</a>
-        </td>
-        <td>
-          <!-- <a :href="`portrait/${item.filePortrait}`">{{ item.name }}</a> -->
-        </td>
-      </tr>
-    </table>
+  <div class="body">
+    <div class="indexWrap">
+      <h2>租借者畫面</h2>
+      <table>
+        <tr>
+          <th>頁面名稱</th>
+          <th>橫式</th>
+          <th>直式</th>
+        </tr>
+        <tr v-for="(item, index) in data" :key="index">
+          <td>{{ item.title }}</td>
+          <td>
+            <a :href="`${item.fileLandscape}`">{{ item.name }}</a>
+          </td>
+          <td>
+            <!-- <a :href="`portrait/${item.filePortrait}`">{{ item.name }}</a> -->
+          </td>
+        </tr>
+      </table>
 
-    <h2>管理者畫面</h2>
-    <table>
-      <tr>
-        <th>頁面名稱</th>
-        <th>橫式</th>
-        <th>直式</th>
-      </tr>
-      <tr v-for="(item, index) in data2" :key="index">
-        <td>{{ item.title }}</td>
-        <td>
-          <a :href="`https://hywebu00.github.io/2025_gaza_Vue/#/portrait/${item.fileLandscape}`">{{ item.name }}</a>
-        </td>
-        <td>
-          <!-- <a :href="`portrait/${item.filePortrait}`">{{ item.name }}</a> -->
-        </td>
-      </tr>
-    </table>
-    <h2>共用畫面</h2>
-    <table>
-      <tr>
-        <th>頁面名稱</th>
-        <th>橫式</th>
-        <th>直式</th>
-      </tr>
-      <tr>
-        <td>3-1.對話視窗</td>
-        <td><a href="landscape/3-1.dialog.html">3-1.dialog.html</a></td>
-        <td><a href="portrait/3-1.dialog.html">3-1.dialog.html</a></td>
-      </tr>
-    </table>
+      <h2>管理者畫面</h2>
+      <table>
+        <tr>
+          <th>頁面名稱</th>
+          <th>橫式</th>
+          <th>直式</th>
+        </tr>
+        <tr v-for="(item, index) in data2" :key="index">
+          <td>{{ item.title }}</td>
+          <td>
+            <a :href="`https://hywebu00.github.io/2025_gaza_Vue/#/portrait/${item.fileLandscape}`">{{ item.name }}</a>
+          </td>
+          <td>
+            <!-- <a :href="`portrait/${item.filePortrait}`">{{ item.name }}</a> -->
+          </td>
+        </tr>
+      </table>
+      <h2>共用畫面</h2>
+      <table>
+        <tr>
+          <th>頁面名稱</th>
+          <th>橫式</th>
+          <th>直式</th>
+        </tr>
+        <tr>
+          <td>3-1.對話視窗</td>
+          <td><a href="landscape/3-1.dialog.html">3-1.dialog.html</a></td>
+          <td><a href="portrait/3-1.dialog.html">3-1.dialog.html</a></td>
+        </tr>
+      </table>
+    </div>
   </div>
 </template>
 
@@ -185,6 +187,10 @@ export default {
 </script>
 
 <style>
+.body {
+  height: 100vh;
+  overflow: scroll;
+}
 .indexWrap {
   max-width: 1000px;
   width: 100%;
