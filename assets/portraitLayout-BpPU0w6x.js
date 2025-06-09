@@ -1,0 +1,1 @@
+import{p as o}from"./pageView-BPFonjTM.js";import{_ as t,c as a,a as s,b as r,r as n,o as c}from"./index-CUjpRMBK.js";const p={components:{pageView:o}},i=s("div",{class:""},"portrait",-1);function _(m,d,l,f,u,V){const e=n("pageView");return c(),a("main",null,[i,r(e)])}const w=t(p,[["render",_]]);export{w as default};
