@@ -2,6 +2,7 @@
   <div class="body">
     <div class="indexWrap">
       <h2>租借者畫面</h2>
+      <p>ps.直式頁面只有第一個連結有頁面</p>
       <table>
         <tr>
           <th>頁面名稱</th>
@@ -14,7 +15,7 @@
             <a :href="`${item.fileLandscape}`">{{ item.name }}</a>
           </td>
           <td>
-            <!-- <a :href="`portrait/${item.filePortrait}`">{{ item.name }}</a> -->
+            <a :href="`${item.filePortrait}`">{{ item.name }}</a>
           </td>
         </tr>
       </table>
@@ -45,8 +46,8 @@
         </tr>
         <tr>
           <td>3-1.對話視窗</td>
-          <td><a href="landscape/3-1.dialog.html">3-1.dialog.html</a></td>
-          <td><a href="portrait/3-1.dialog.html">3-1.dialog.html</a></td>
+          <td><a href="https://hywebu00.github.io/2025_gaze_Vue/#/dialog">3-1.dialog.html</a></td>
+          <td><a href=""></a></td>
         </tr>
       </table>
     </div>
@@ -62,7 +63,7 @@ export default {
           title: '1-1.使用者_歡迎使用',
           name: '1-1.User_welcome.html',
           fileLandscape: 'https://hywebu00.github.io/2025_gaze_Vue/#/',
-          filePortrait: '',
+          filePortrait: 'https://hywebu00.github.io/2025_gaze_Vue/#/portrait',
         },
         {
           title: '1-2.使用者_款式選擇',
@@ -187,10 +188,6 @@ export default {
 </script>
 
 <style scoped>
-.body {
-  height: 100vh;
-  overflow: scroll;
-}
 .indexWrap {
   max-width: 1000px;
   width: 100%;
@@ -205,6 +202,10 @@ export default {
 h2 {
   color: #53402b;
 }
+h2 + p {
+  color: #8b2b3f;
+  font-weight: 700;
+}
 table {
   width: 100%;
   border-collapse: collapse;
@@ -218,6 +219,7 @@ th {
 td {
   padding: 0.5rem 1rem;
   border-bottom: 2px solid #e5dbc8;
+  min-width: 200px;
 }
 td:first-child {
   width: 40%;

@@ -85,6 +85,10 @@ const routes = [
         path: 'add',
         component: () => import('@/views/landscape/Admin_card_add.vue'),
       },
+      {
+        path: 'dialog',
+        component: () => import('@/views/landscape/dialogComponent.vue'),
+      },
     ],
   },
   {
