@@ -1,9 +1,10 @@
 @use '_normalize.scss' as *; //reset
 @use '_font.scss' as *; //font
+@use '_swiper.scss' as *; //swiper
 @use '_variable.scss' as *; //variable$textColor
 
 body {
-  background: url(../images/landscape/bg.jpg) repeat;
+  background: url(@/images/landscape/bg.jpg) repeat;
   font-family: 'Noto Sans TC', '微軟正黑體', sans-serif;
   position: relative;
   overflow-x: hidden;
@@ -18,7 +19,7 @@ body {
       width: 729px;
       height: 201px;
       display: block;
-      background: url(../images/landscape/bg_top.png) 0 0 no-repeat;
+      background: url(@/images/landscape/bg_top.png) 0 0 no-repeat;
       position: absolute;
       right: 0;
       top: 0;
@@ -29,7 +30,7 @@ body {
       width: 597px;
       height: 197px;
       display: block;
-      background: url(../../images/landscape/bg_bottom.png) 0 0 no-repeat;
+      background: url(@/images/landscape/bg_bottom.png) 0 0 no-repeat;
       position: absolute;
       left: 0;
       bottom: 0;
@@ -66,7 +67,7 @@ body {
         cursor: pointer;
         width: 80px;
         height: 80px;
-        background: url(../../images/landscape/close.png) center center no-repeat;
+        background: url(@/images/landscape/close.png) center center no-repeat;
         font-size: 0;
       }
       .popupContent {
@@ -149,17 +150,17 @@ body {
     &.greyBtn {
       width: 351px;
       color: #615c52;
-      background: url(../../images/landscape/btnbg02.png) 0 0 no-repeat;
+      background: url(@/images/landscape/btnbg02.png) 0 0 no-repeat;
     }
     &.yellowBtn {
       width: 351px;
       color: #53402b;
-      background: url(../../images/landscape/btnbg03.png) 0 0 no-repeat;
+      background: url(@/images/landscape/btnbg03.png) 0 0 no-repeat;
     }
     &.startBtn {
       width: 691px;
       color: #53402b;
-      background: url(../../images/landscape/btnbg01.png) 0 0 no-repeat;
+      background: url(@/images/landscape/btnbg01.png) 0 0 no-repeat;
     }
   }
   .total {
@@ -236,14 +237,14 @@ body {
     font-size: 35px;
     font-weight: bold;
     color: #fff;
-    background: url(../../images/landscape/step_textbg.png) center center no-repeat;
+    background: url(@/images/landscape/step_textbg.png) center center no-repeat;
     margin: 20px auto 0 auto;
     padding-top: 36px;
     line-height: 100%;
   }
   .step1 {
     .stepPic {
-      background: $boxBgColor url(../../images/landscape/step1_bg.png) center center no-repeat;
+      background: $boxBgColor url(@/images/landscape/step1_bg.png) center center no-repeat;
       .hand {
         animation-name: hand1;
         transform: translateX(-335px) translateY(320px);
@@ -252,7 +253,7 @@ body {
   }
   .step2 {
     .stepPic {
-      background: $boxBgColor url(../../images/landscape/step2_bg.png) center bottom no-repeat;
+      background: $boxBgColor url(@/images/landscape/step2_bg.png) center bottom no-repeat;
       .hand {
         animation-name: hand2;
         transform: translateX(25px) translateY(87px) rotate(-10deg);
@@ -261,7 +262,7 @@ body {
   }
   .step3 {
     .stepPic {
-      background: $boxBgColor url(../../images/landscape/step3_bg.png) center bottom no-repeat;
+      background: $boxBgColor url(@/images/landscape/step3_bg.png) center bottom no-repeat;
       .hand {
         animation-name: hand3;
         // animation-delay: 6s;
@@ -277,28 +278,28 @@ body {
   // justify-content: center;
   margin-top: -30px;
   padding: 0 100px;
-  .slick-prev,
-  .slick-next {
-    width: 50px;
-    height: 100px;
-    font-size: 0;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    border: 0;
-    z-index: 99;
-  }
-  .slick-prev {
-    left: 50px;
-    background: transparent url(../../images/landscape/arrow.svg) center center no-repeat;
-  }
-  .slick-next {
-    right: 50px;
-    background: transparent url(../../images/landscape/arrow2.svg) center center no-repeat;
-  }
-  .slick-disabled {
-    display: none !important;
-  }
+  // .slick-prev,
+  // .slick-next {
+  //   width: 50px;
+  //   height: 100px;
+  //   font-size: 0;
+  //   position: absolute;
+  //   top: 50%;
+  //   transform: translateY(-50%);
+  //   border: 0;
+  //   z-index: 99;
+  // }
+  // .slick-prev {
+  //   left: 50px;
+  //   background: transparent url(../../images/landscape/arrow.svg) center center no-repeat;
+  // }
+  // .slick-next {
+  //   right: 50px;
+  //   background: transparent url(../../images/landscape/arrow2.svg) center center no-repeat;
+  // }
+  // .slick-disabled {
+  //   display: none !important;
+  // }
   .gaze {
     padding: 30px 0;
     .pic {
@@ -576,10 +577,10 @@ body {
           opacity: 0.8;
         }
         &.show:before {
-          background: url(../../images/landscape/icon_eyeOpen.svg) center no-repeat;
+          background: url(@/images/landscape/icon_eyeOpen.svg) center no-repeat;
         }
         &.hide:before {
-          background: url(../../images/landscape/icon_eyeClose.svg) center no-repeat;
+          background: url(@/images/landscape/icon_eyeClose.svg) center no-repeat;
         }
       }
     }
@@ -631,7 +632,7 @@ body {
     position: relative;
     width: 1002px;
     height: 712px;
-    background: url(../../images/landscape/case_bg.png) 0 0 no-repeat;
+    background: url(@/images/landscape/case_bg.png) 0 0 no-repeat;
     .legend {
       position: absolute;
       display: flex;

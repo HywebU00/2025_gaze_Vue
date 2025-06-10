@@ -1,5 +1,6 @@
 @use '_normalize.scss' as *; //reset
 @use '_font.scss' as *; //font
+@use '_swiper.scss' as *; //swiper
 @use '_variable.scss' as *; //variable$textColor
 body {
   background: url(@/images/portrait/bg.jpg) repeat;

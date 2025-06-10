@@ -2,7 +2,7 @@
   <div class="body">
     <div class="indexWrap">
       <h2>租借者畫面</h2>
-      <p>ps.直式頁面只有第一個連結有頁面</p>
+      <p>ps.直式頁面只有第一個及select連結有頁面</p>
       <table>
         <tr>
           <th>頁面名稱</th>

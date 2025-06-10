@@ -99,6 +99,10 @@ const routes = [
         path: '',
         component: () => import('@/views/portrait/defaultComponent.vue'),
       },
+      {
+        path: 'select',
+        component: () => import('@/views/portrait/selectComponent.vue'),
+      },
     ],
   },
   {
