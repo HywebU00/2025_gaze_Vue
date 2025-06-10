@@ -1,10 +1,10 @@
 <template>
   <div class="">
     <!-- popup start -->
-    <div class="popup">
+    <div class="popup" v-show="popStatus">
       <div class="popupOverlay"></div>
       <div class="popupBlock">
-        <div class="close">關閉</div>
+        <div class="close" @click="popStatus = !popStatus">關閉</div>
         <div class="popupContent">
           <div class="number">24</div>
           <div class="text">號櫃門已開啟 ! <br />檢查完畢後請確保櫃門已關閉</div>
@@ -92,28 +92,17 @@
 </template>
 
 <script>
-export default {};
-const overlay = document.querySelector('.popupOverlay');
-const popup = document.querySelector('.popup');
-const close = document.querySelector('.popup .close');
-
-// 點擊 overlay 時隱藏 popup
-overlay.addEventListener('click', function () {
-  popup.style.display = 'none';
-});
-
-// 點擊 close 按鈕時隱藏 popup
-close.addEventListener('click', function () {
-  popup.style.display = 'none';
-});
-</script>
-<script>
-const cases = document.querySelectorAll('.case');
-cases.forEach(function (myCase) {
-  myCase.addEventListener('click', function () {
-    this.classList.toggle('empty');
-  });
-});
+export default {
+  data() {
+    return {
+      popStatus: true,
+    };
+  },
+  mounted() {
+    // 在這裡主動通知父層：想顯示 member
+    this.$emit('set-member-visible', true);
+  },
+};
 </script>
 
 <style></style>

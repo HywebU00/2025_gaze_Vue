@@ -3,7 +3,7 @@
 @use '_variable.scss' as *; //variable$textColor
 
 body {
-  background: url(../../images/landscape/bg.jpg) repeat;
+  background: url(../images/landscape/bg.jpg) repeat;
   font-family: 'Noto Sans TC', '微軟正黑體', sans-serif;
   position: relative;
   overflow-x: hidden;
@@ -18,7 +18,7 @@ body {
       width: 729px;
       height: 201px;
       display: block;
-      background: url(../../images/landscape/bg_top.png) 0 0 no-repeat;
+      background: url(../images/landscape/bg_top.png) 0 0 no-repeat;
       position: absolute;
       right: 0;
       top: 0;

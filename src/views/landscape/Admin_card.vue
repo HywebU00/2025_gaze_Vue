@@ -14,7 +14,12 @@
 </template>
 
 <script>
-export default {};
+export default {
+  mounted() {
+    // 在這裡主動通知父層：想顯示 member
+    this.$emit('set-member-visible', true);
+  },
+};
 </script>
 
 <style></style>

@@ -85,7 +85,7 @@ export default {
         {
           title: '1-5.使用者_取出閱讀器',
           name: '	1-5.User_loan.html',
-          fileLandscape: 'https://hywebu00.github.io/2025_gaze_Vue/#/',
+          fileLandscape: 'https://hywebu00.github.io/2025_gaze_Vue/#/loan',
           filePortrait: '',
         },
       ],
@@ -93,91 +93,91 @@ export default {
         {
           title: '2-0.管理者_館員模式靠卡後輸入密碼',
           name: '	2-0.Admin_password.html',
-          fileLandscape: 'https://hywebu00.github.io/2025_gaze_Vue/#/dmin_password',
+          fileLandscape: 'https://hywebu00.github.io/2025_gaze_Vue/#/password',
           filePortrait: '',
         },
         {
           title: '2-1.管理者_首頁',
           name: '	2-1.Admin_home.html	',
-          fileLandscape: 'https://hywebu00.github.io/2025_gaze_Vue/#/Admin_home',
+          fileLandscape: 'https://hywebu00.github.io/2025_gaze_Vue/#/home',
           filePortrait: '',
         },
         {
           title: '2-2.管理者_上架1(全灰)',
           name: '2-2.Admin_launched1.html',
-          fileLandscape: 'https://hywebu00.github.io/2025_gaze_Vue/#/',
+          fileLandscape: 'https://hywebu00.github.io/2025_gaze_Vue/#/launched1',
           filePortrait: '',
         },
         {
           title: '2-3.管理者_上架2(亮燈)',
           name: '2-3.Admin_launched2.html',
-          fileLandscape: 'https://hywebu00.github.io/2025_gaze_Vue/#/',
+          fileLandscape: 'https://hywebu00.github.io/2025_gaze_Vue/#/launched2',
           filePortrait: '',
         },
         {
           title: '2-4.管理者_上架3(提示)',
           name: '	2-4.Admin_launched3.html',
-          fileLandscape: 'https://hywebu00.github.io/2025_gaze_Vue/#/',
+          fileLandscape: 'https://hywebu00.github.io/2025_gaze_Vue/#/launched3',
           filePortrait: '',
         },
         {
           title: '2-5.管理者_上架明細',
           name: '	2-5.Admin_launched_detail.html',
-          fileLandscape: 'https://hywebu00.github.io/2025_gaze_Vue/#/',
+          fileLandscape: 'https://hywebu00.github.io/2025_gaze_Vue/#/detail',
           filePortrait: '',
         },
         {
           title: '2-6.管理者_模擬借閱',
           name: '	2-6.Admin_simulation.html	',
-          fileLandscape: 'https://hywebu00.github.io/2025_gaze_Vue/#/',
+          fileLandscape: 'https://hywebu00.github.io/2025_gaze_Vue/#/simulation',
           filePortrait: '',
         },
         {
           title: '2-7.管理者_櫃門全開',
           name: '	2-7.Admin_allopen.html',
-          fileLandscape: 'https://hywebu00.github.io/2025_gaze_Vue/#/',
+          fileLandscape: 'https://hywebu00.github.io/2025_gaze_Vue/#/allopen',
           filePortrait: '',
         },
         {
           title: '2-8.管理者_指定櫃門開啟1',
           name: '2-8.Admin_open1.html',
-          fileLandscape: 'https://hywebu00.github.io/2025_gaze_Vue/#/',
+          fileLandscape: 'https://hywebu00.github.io/2025_gaze_Vue/#/open1',
           filePortrait: '',
         },
         {
           title: '2-9.管理者_指定櫃門開啟2',
           name: '2-9.Admin_open2.html',
-          fileLandscape: 'https://hywebu00.github.io/2025_gaze_Vue/#/',
+          fileLandscape: 'https://hywebu00.github.io/2025_gaze_Vue/#/open2',
           filePortrait: '',
         },
         {
           title: '2-10.管理者_櫃位啟用設定',
           name: '2-10.Admin_setting.html',
-          fileLandscape: 'https://hywebu00.github.io/2025_gaze_Vue/#/',
+          fileLandscape: 'https://hywebu00.github.io/2025_gaze_Vue/#/setting',
           filePortrait: '',
         },
         {
           title: '2-11.管理者_卡片維護',
           name: '2-11.Admin_card.html',
-          fileLandscape: 'https://hywebu00.github.io/2025_gaze_Vue/#/',
+          fileLandscape: 'https://hywebu00.github.io/2025_gaze_Vue/#/card',
           filePortrait: '',
         },
         {
           title: '2-12.管理者_卡片維護-讀者卡列表',
           name: '2-12.Admin_card_reader.html',
-          fileLandscape: 'https://hywebu00.github.io/2025_gaze_Vue/#/',
+          fileLandscape: 'https://hywebu00.github.io/2025_gaze_Vue/#/reader',
           filePortrait: '',
         },
         {
           title: '2-13.管理者_卡片維護-館員卡列表',
           name: '2-13.Admin_card_librarian.html',
-          fileLandscape: 'https://hywebu00.github.io/2025_gaze_Vue/#/',
+          fileLandscape: 'https://hywebu00.github.io/2025_gaze_Vue/#/librarian',
           filePortrait: '',
         },
         {
           title: '2-14.管理者_卡片維護-點擊新增卡片畫面',
           name: '2-14.Admin_card_add.html',
-          fileLandscape: 'https://hywebu00.github.io/2025_gaze_Vue/#/',
+          fileLandscape: 'https://hywebu00.github.io/2025_gaze_Vue/#/add',
           filePortrait: '',
         },
       ],
@@ -186,7 +186,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .body {
   height: 100vh;
   overflow: scroll;

@@ -4,9 +4,9 @@
       <div class="title">請靠卡感應或掃描借閱證</div>
       <!-- scan start -->
       <div class="scanBlock">
-        <div class="hand handLeft"><img src="images/hand3.png" alt="" /></div>
+        <div class="hand handLeft"><img src="~@/images/landscape/hand3.png" alt="" /></div>
         <div class="hand handRight">
-          <img src="images/hand4.png" alt="" />
+          <img src="~@/images/landscape/hand4.png" alt="" />
         </div>
       </div>
       <!-- scan end -->

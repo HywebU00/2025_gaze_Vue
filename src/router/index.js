@@ -13,10 +13,10 @@ const routes = [
         path: 'select',
         component: () => import('@/views/landscape/selectComponent.vue'),
       },
-      // {
-      //   path: 'scan',
-      //   component: () => import('@/views/landscape/scanComponent.vue'),
-      // },
+      {
+        path: 'scan',
+        component: () => import('@/views/landscape/scanComponent.vue'),
+      },
       {
         path: 'terms',
         component: () => import('@/views/landscape/termsComponent.vue'),
@@ -49,6 +49,42 @@ const routes = [
         path: 'detail',
         component: () => import('@/views/landscape/Admin_launched_detail.vue'),
       },
+      {
+        path: 'simulation',
+        component: () => import('@/views/landscape/Admin_simulation.vue'),
+      },
+      {
+        path: 'allopen',
+        component: () => import('@/views/landscape/Admin_allopen.vue'),
+      },
+      {
+        path: 'open1',
+        component: () => import('@/views/landscape/Admin_open1.vue'),
+      },
+      {
+        path: 'open2',
+        component: () => import('@/views/landscape/Admin_open2.vue'),
+      },
+      {
+        path: 'setting',
+        component: () => import('@/views/landscape/Admin_setting.vue'),
+      },
+      {
+        path: 'card',
+        component: () => import('@/views/landscape/Admin_card.vue'),
+      },
+      {
+        path: 'reader',
+        component: () => import('@/views/landscape/Admin_card_reader.vue'),
+      },
+      {
+        path: 'librarian',
+        component: () => import('@/views/landscape/Admin_card_librarian.vue'),
+      },
+      {
+        path: 'add',
+        component: () => import('@/views/landscape/Admin_card_add.vue'),
+      },
     ],
   },
   {
@@ -56,7 +92,7 @@ const routes = [
     component: () => import('@/views/layout/portraitLayout.vue'),
     children: [
       {
-        path: '/',
+        path: '',
         component: () => import('@/views/portrait/defaultComponent.vue'),
       },
     ],

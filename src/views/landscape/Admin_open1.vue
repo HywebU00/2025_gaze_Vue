@@ -73,13 +73,4 @@
   </div>
 </template>
 
-<script>
-const cases = document.querySelectorAll('.case');
-cases.forEach(function (myCase) {
-  myCase.addEventListener('click', function () {
-    this.classList.toggle('empty');
-  });
-});
-</script>
-
 <style></style>

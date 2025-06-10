@@ -1,10 +1,10 @@
 <template>
   <div class="">
     <!-- popup start -->
-    <div class="popup">
+    <div v-show="popStatus" class="popup">
       <div class="popupOverlay"></div>
       <div class="popupBlock">
-        <div class="close">關閉</div>
+        <div class="close" @click="popStatus = !popStatus">關閉</div>
         <div class="popupContent">
           <div class="text">請靠卡感應卡片以進行卡片登錄</div>
         </div>
@@ -78,19 +78,17 @@
 </template>
 
 <script>
-const overlay = document.querySelector('.popupOverlay');
-const popup = document.querySelector('.popup');
-const close = document.querySelector('.popup .close');
-
-// 點擊 overlay 時隱藏 popup
-overlay.addEventListener('click', function () {
-  popup.style.display = 'none';
-});
-
-// 點擊 close 按鈕時隱藏 popup
-close.addEventListener('click', function () {
-  popup.style.display = 'none';
-});
+export default {
+  data() {
+    return {
+      popStatus: true,
+    };
+  },
+  mounted() {
+    // 在這裡主動通知父層：想顯示 member
+    this.$emit('set-member-visible', true);
+  },
+};
 </script>
 
 <style></style>

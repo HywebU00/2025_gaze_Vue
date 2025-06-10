@@ -6,8 +6,8 @@
         <div class="leftText">
           <div class="text">請輸入六位數館員密碼</div>
           <div class="password">
-            <input name="password" type="password" placeholder="請輸入密碼" title="請輸入數密碼" />
-            <button type="button" class="passwordEye hide">顯示密碼</button>
+            <input name="password" :type="passwordShow ? 'password' : 'text'" placeholder="請輸入密碼" title="請輸入數密碼" />
+            <button @click="passwordShow = !passwordShow" type="button" :class="['passwordEye', passwordShow ? 'hide' : 'show']">顯示密碼</button>
           </div>
           <div class="btn">
             <a href="2-1.Admin_home.html" class="yellowBtn">確認</a>
@@ -37,7 +37,17 @@
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      passwordShow: true,
+    };
+  },
+  mounted() {
+    // 在這裡主動通知父層：不想顯示 member
+    this.$emit('set-member-visible', false);
+  },
+};
 </script>
 
 <style></style>

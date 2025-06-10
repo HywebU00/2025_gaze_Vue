@@ -2,7 +2,7 @@
 @use '_font.scss' as *; //font
 @use '_variable.scss' as *; //variable$textColor
 body {
-  background: url(../images/bg.jpg) repeat;
+  background: url(@/images/portrait/bg.jpg) repeat;
   font-family: 'Noto Sans TC', '微軟正黑體', sans-serif;
   position: relative;
   overflow-x: hidden;
@@ -17,7 +17,7 @@ body {
       width: 687px;
       height: 203px;
       display: block;
-      background: url(../images/bg_top.png) 0 0 no-repeat;
+      background: url(@/images/portrait/bg_top.png) 0 0 no-repeat;
       position: absolute;
       right: 0;
       top: 0;
@@ -28,7 +28,7 @@ body {
       width: 772px;
       height: 190px;
       display: block;
-      background: url(../images/bg_bottom.png) 0 0 no-repeat;
+      background: url(@/images/portrait/bg_bottom.png) 0 0 no-repeat;
       position: absolute;
       left: 0;
       bottom: 0;
@@ -65,7 +65,7 @@ body {
         cursor: pointer;
         width: 80px;
         height: 80px;
-        background: url(../images/close.png) center center no-repeat;
+        background: url(@/images/portrait/close.png) center center no-repeat;
         font-size: 0;
       }
       .popupContent {
@@ -148,17 +148,17 @@ body {
     &.greyBtn {
       width: 351px;
       color: #615c52;
-      background: url(../images/btnbg02.png) 0 0 no-repeat;
+      background: url(@/images/portrait/btnbg02.png) 0 0 no-repeat;
     }
     &.yellowBtn {
       width: 351px;
       color: #53402b;
-      background: url(../images/btnbg03.png) 0 0 no-repeat;
+      background: url(@/images/portrait/btnbg03.png) 0 0 no-repeat;
     }
     &.startBtn {
       width: 691px;
       color: #53402b;
-      background: url(../images/btnbg01.png) 0 0 no-repeat;
+      background: url(@/images/portrait/btnbg01.png) 0 0 no-repeat;
     }
   }
   .total {
@@ -258,12 +258,12 @@ body {
     font-size: 35px;
     font-weight: bold;
     color: #fff;
-    background: url(../images/step_textbg.png) center center no-repeat;
+    background: url(@/images/portrait/step_textbg.png) center center no-repeat;
     margin: 20px auto 0 auto;
   }
   .step1 {
     .stepPic {
-      background: url(../images/step1_bg.png) center center no-repeat;
+      background: url(@/images/portrait/step1_bg.png) center center no-repeat;
       .hand {
         animation-name: hand1;
         transform: translateX(-335px) translateY(320px);
@@ -272,7 +272,7 @@ body {
   }
   .step2 {
     .stepPic {
-      background: url(../images/step2_bg.png) center bottom no-repeat;
+      background: url(@/images/portrait/step2_bg.png) center bottom no-repeat;
       .hand {
         animation-name: hand2;
         transform: translateX(25px) translateY(87px) rotate(-10deg);
@@ -281,7 +281,7 @@ body {
   }
   .step3 {
     .stepPic {
-      background: url(../images/step3_bg.png) center bottom no-repeat;
+      background: url(@/images/portrait/step3_bg.png) center bottom no-repeat;
       .hand {
         animation-name: hand3;
         // animation-delay: 6s;
@@ -292,7 +292,7 @@ body {
   ~ .btn .startBtn {
     width: 691px;
     color: #53402b;
-    background: url(../images/btnbg01.png) 0 0 no-repeat;
+    background: url(@/images/portrait/btnbg01.png) 0 0 no-repeat;
   }
 }
 
@@ -312,11 +312,11 @@ body {
   }
   .slick-prev {
     left: 50px;
-    background: transparent url(../images/arrow.svg) center center no-repeat;
+    background: transparent url(@/images/portrait/arrow.svg) center center no-repeat;
   }
   .slick-next {
     right: 50px;
-    background: transparent url(../images/arrow2.svg) center center no-repeat;
+    background: transparent url(@/images/portrait/arrow2.svg) center center no-repeat;
   }
   .slick-disabled {
     display: none !important;
@@ -401,7 +401,7 @@ body {
   border-radius: 80px;
   box-shadow: 0 0 40px rgba($color: $shadowColor, $alpha: 0.15);
   overflow: hidden;
-  background: $boxBgColor url(../images/scan_bg.png) center center no-repeat;
+  background: $boxBgColor url(@/images/portrait/scan_bg.png) center center no-repeat;
   margin: 200px auto 0 auto;
   .hand {
     position: absolute;
@@ -611,10 +611,10 @@ body {
           opacity: 0.8;
         }
         &.show:before {
-          background: url(../images/icon_eyeOpen.svg) center no-repeat;
+          background: url(@/images/portrait/icon_eyeOpen.svg) center no-repeat;
         }
         &.hide:before {
-          background: url(../images/icon_eyeClose.svg) center no-repeat;
+          background: url(@/images/portrait/icon_eyeClose.svg) center no-repeat;
         }
       }
     }
@@ -703,14 +703,14 @@ body {
       position: relative;
       width: 695px;
       height: 451px;
-      background: url(../images/case_bgTop.png) 0 0;
+      background: url(@/images/portrait/case_bgTop.png) 0 0;
       margin-bottom: 30px;
     }
     .case2 {
       position: relative;
       width: 695px;
       height: 456px;
-      background: url(../images/case_bgBottom.png) 0 0;
+      background: url(@/images/portrait/case_bgBottom.png) 0 0;
     }
     .caseGroup {
       position: absolute;
@@ -912,7 +912,7 @@ body {
       width: 60px;
       height: 60px;
       display: block;
-      background: url(../images/icon_delete.svg) 0 0 no-repeat;
+      background: url(@/images/portrait/icon_delete.svg) 0 0 no-repeat;
       font-size: 0;
       margin: 0 auto;
     }
