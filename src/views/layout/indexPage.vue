@@ -30,7 +30,7 @@
         <tr v-for="(item, index) in data2" :key="index">
           <td>{{ item.title }}</td>
           <td>
-            <a :href="`https://hywebu00.github.io/2025_gaze_Vue/#/portrait/${item.fileLandscape}`">{{ item.name }}</a>
+            <a :href="`${item.fileLandscape}`">{{ item.name }}</a>
           </td>
           <td>
             <!-- <a :href="`portrait/${item.filePortrait}`">{{ item.name }}</a> -->
