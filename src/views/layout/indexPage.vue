@@ -69,7 +69,7 @@ export default {
           title: '1-2.使用者_款式選擇',
           name: '1-2.User_select.html',
           fileLandscape: 'https://hywebu00.github.io/2025_gaze_Vue/#/select',
-          filePortrait: '',
+          filePortrait: 'https://hywebu00.github.io/2025_gaze_Vue/#/portrait/select',
         },
         {
           title: '1-3.使用者_款式選擇',
