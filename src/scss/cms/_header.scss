@@ -1,0 +1,225 @@
+@use '_variable.scss' as *; //variable
+.header {
+  width: 100%;
+  margin-bottom: 18px;
+  box-sizing: border-box;
+  z-index: 99;
+  @media (max-width: $screenSm) {
+    margin-bottom: 0;
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    box-shadow: 0 0 40px 0 $shadowColor;
+  }
+  .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    @media (max-width: $screenSm) {
+      padding: 0;
+      background: #fff;
+    }
+  }
+  .h1Title {
+    margin: 30px 0 30px 22px;
+    height: 64px;
+    @media (max-width: $screenSm) {
+      margin: 0 auto;
+      height: 60px;
+      width: 100%;
+      padding: 4px 60px;
+      box-sizing: border-box;
+      text-align: center;
+    }
+    a {
+      display: block;
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      @media (max-width: $screenSm) {
+        justify-content: center;
+      }
+    }
+    .logo {
+      height: 64px;
+      margin-right: 20px;
+      @media (max-width: $screenSm) {
+        display: none;
+      }
+      img {
+        height: 100%;
+        width: auto;
+      }
+    }
+    .dep {
+      font-size: 1.375rem;
+      color: $logoColor1;
+      font-weight: bold;
+      @media (max-width: $screenSm) {
+        font-size: 1.125rem;
+      }
+      span {
+        display: block;
+        color: $logoColor2;
+        font-size: 1.625rem;
+        @media (max-width: $screenSm) {
+          font-size: 1.25rem;
+        }
+      }
+    }
+  }
+  .navInfo {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    @media (max-width: $screenSm) {
+      position: absolute;
+      right: 10px;
+      top: 6px;
+      z-index: 9;
+    }
+    .member {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: $logColor1;
+      font-weight: bold;
+      font-size: 1.25rem;
+      @media (max-width: $screenSm) {
+        display: none;
+      }
+      &:before {
+        content: '';
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: #fdcd00;
+        display: block;
+      }
+    }
+    .logOut {
+      color: #fff;
+      font-weight: bold;
+      font-size: 1.25rem;
+      border: 0px;
+      border-radius: 23px;
+      height: 44px;
+      line-height: 44px;
+      padding: 0 20px 0 50px;
+      background: $btnBg1 url(@/images/cms/icon_logout.svg) 20px center no-repeat;
+      background-size: 24px;
+      @media (max-width: $screenSm) {
+        font-size: 0;
+        padding: 0 23px;
+        background: $btnBg1 url(@/images/cms/icon_logout.svg) 12px center no-repeat;
+        background-size: 24px;
+        border-radius: 10px;
+      }
+      &:hover,
+      &:focus-visible {
+        background: $btnBg3 url(@/images/cms/icon_logout.svg) 20px center no-repeat;
+        background-size: 24px;
+        @media (max-width: $screenSm) {
+          background: $btnBg3 url(@/images/cms/icon_logout.svg) 12px center no-repeat;
+          background-size: 24px;
+        }
+      }
+    }
+  }
+  .mainMenu {
+    width: 100%;
+    @media (max-width: $screenSm) {
+      position: fixed;
+      top: 0;
+      width: 100vw;
+    }
+    .mobileMenu {
+      display: none;
+      cursor: pointer;
+      position: absolute;
+      width: 46px;
+      height: 46px;
+      border-radius: 10px;
+      background: $logColor1 url(@/images/cms/icon_hamburger.svg) center no-repeat;
+      background-size: 44px;
+      left: 10px;
+      top: 6px;
+      &:hover {
+        background: $logColor2 url(@/images/cms/icon_hamburger.svg) center no-repeat;
+        background-size: 44px;
+      }
+      @media (max-width: $screenSm) {
+        display: block;
+      }
+    }
+    .menu {
+      width: 100%;
+      height: 70px;
+      line-height: 70px;
+      background: $menuColor1 url(@/images/cms/menu_bg.png) 0 0 repeat;
+      box-shadow: 0 0 40px 0 $shadowColor;
+      border-radius: 10px;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: center;
+      @media (max-width: $screenSm) {
+        margin-top: 60px;
+        height: auto;
+        max-height: 0;
+        border-radius: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+        &.show {
+          max-height: 1000px;
+        }
+      }
+      ul {
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        @media (max-width: $screenSm) {
+          flex-direction: column;
+          width: 100%;
+        }
+      }
+      li {
+        @media (max-width: $screenSm) {
+          text-align: center;
+          border-bottom: 1px solid #fff;
+          &:last-child {
+            border-bottom: 0;
+          }
+        }
+        a {
+          text-decoration: none;
+          padding: 0 30px;
+          display: block;
+          color: $primaryColor;
+          font-size: 1.375rem;
+          font-weight: bold;
+          white-space: nowrap;
+          @media (max-width: $screenLg) {
+            padding: 0 20px;
+          }
+          @media (max-width: $screenMd) {
+            padding: 0 14px;
+            font-size: 1.25rem;
+          }
+          @media (max-width: $screenSm) {
+            width: 100%;
+            box-sizing: border-box;
+          }
+          &:hover,
+          &:focus-visible,
+          &.active {
+            color: #fff;
+            background: $menuColor2 url(@/images/cms/menu_bg.png) 0 0 repeat;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 64 64">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <!-- Generator: Adobe Illustrator 28.6.0, SVG Export Plug-In . SVG Version: 1.2.0 Build 709)  -->
+  <g>
+    <g id="_圖層_1" data-name="圖層_1">
+      <g id="SVGRepo_iconCarrier">
+        <g id="Edit__x2F__Add_x5F_Plus_x5F_Circle">
+          <g id="Vector">
+            <path class="cls-1" d="M32,58.7c-14.7,0-26.7-12-26.7-26.7S17.3,5.3,32,5.3s26.7,12,26.7,26.7-12,26.7-26.7,26.7ZM32,10.7c-11.8,0-21.3,9.6-21.3,21.3s9.6,21.3,21.3,21.3,21.3-9.6,21.3-21.3-9.6-21.3-21.3-21.3ZM32,45.3c-1.5,0-2.7-1.2-2.7-2.7v-8h-8c-1.5,0-2.7-1.2-2.7-2.7s1.2-2.7,2.7-2.7h8v-8c0-1.5,1.2-2.7,2.7-2.7s2.7,1.2,2.7,2.7v8h8c1.5,0,2.7,1.2,2.7,2.7s-1.2,2.7-2.7,2.7h-8v8c0,1.5-1.2,2.7-2.7,2.7Z"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

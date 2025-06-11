@@ -16,8 +16,9 @@
             </div>
             <div class="formGrp">
               <div class="password">
-                <input name="password" type="password" placeholder="請輸入密碼" title="請輸入密碼" />
-                <button type="button" class="passwordEye hide">顯示密碼</button>
+                <input name="password" :type="passwordShow ? 'password' : 'text'" placeholder="請輸入密碼" title="請輸入密碼" />
+                <!-- <button type="button" class="passwordEye hide">顯示密碼</button> -->
+                <button @click="passwordShow = !passwordShow" type="button" :class="['passwordEye', passwordShow ? 'hide' : 'show']">顯示密碼</button>
               </div>
               <div class="notice error">您輸入的密碼有誤！</div>
             </div>
@@ -47,4 +48,11 @@
 
 <script>
 import '@/scss/cms/style.scss';
+export default {
+  data() {
+    return {
+      passwordShow: true,
+    };
+  },
+};
 </script>
