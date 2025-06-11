@@ -1,0 +1,1 @@
+import{_ as o,h as r,r as t,o as s}from"./index-BJnEu3Nf.js";const n={};function c(_,a){const e=t("router-view");return s(),r(e)}const i=o(n,[["render",c]]),m=""+new URL("logo-BSFQvsH3.svg",import.meta.url).href;export{m as _,i as p};
