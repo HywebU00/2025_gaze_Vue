@@ -46,6 +46,10 @@ const routes = [
         component: () => import('@/views/landscape/Admin_launched3.vue'),
       },
       {
+        path: 'launched_tab',
+        component: () => import('@/views/landscape/Admin_launched_tab.vue'),
+      },
+      {
         path: 'detail',
         component: () => import('@/views/landscape/Admin_launched_detail.vue'),
       },

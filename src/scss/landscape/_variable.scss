@@ -7,3 +7,24 @@ $tbodyColor: #d6c9af;
 $thTextColor: #fff;
 $tdTextColor: #53402b;
 $tdBorderColor: #e5dbc8;
+
+$secondaryColor: #ffaf00;
+$btnBg1: #582f2f;
+$btnBg2: #a3948b;
+$btnBg3: #ba6000;
+
+$shadowColor: rgba(#391414, 0.15);
+$tabColor1: #a3948b;
+$tabColor2: #582f2f;
+$tabColor3: #ba6000;
+$trColor: #a3948b;
+
+// rem基本尺寸
+$remFontSize: 16;
+
+$containerMax: 1200px !default; //container最大寬
+$screenLg: 1200px !default; //電腦
+$screenMd: 992px !default; //平板
+$screenSm: 768px !default; //手機
+$screenXs: 576px !default; //極小尺寸 - hyui
+$screenXs-flex: 320px !default; //極小尺寸 - flex

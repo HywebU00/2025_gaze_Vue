@@ -134,6 +134,12 @@ export default {
           filePortrait: '',
         },
         {
+          title: '📌 管理者_含Tab',
+          name: '	2-4.Admin_launched_tab.html',
+          fileLandscape: 'https://hywebu00.github.io/2025_gaze_Vue/#/launched_tab',
+          filePortrait: '',
+        },
+        {
           title: '2-7.管理者_櫃門全開',
           name: '	2-7.Admin_allopen.html',
           fileLandscape: 'https://hywebu00.github.io/2025_gaze_Vue/#/allopen',
