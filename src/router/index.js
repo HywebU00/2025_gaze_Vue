@@ -107,6 +107,10 @@ const routes = [
         path: 'select',
         component: () => import('@/views/portrait/selectComponent.vue'),
       },
+      {
+        path: 'launched_tab',
+        component: () => import('@/views/portrait/Admin_launched_tab.vue'),
+      },
     ],
   },
   {

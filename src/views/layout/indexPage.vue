@@ -50,6 +50,19 @@
           <td><a href=""></a></td>
         </tr>
       </table>
+      <h2>新增畫面</h2>
+      <table>
+        <tr>
+          <th>頁面名稱</th>
+          <th>橫式</th>
+          <th>直式</th>
+        </tr>
+        <tr>
+          <td>📌 管理者_含Tab</td>
+          <td><a href="https://hywebu00.github.io/2025_gaze_Vue/#/launched_tab">管理者_含Tab</a></td>
+          <td><a href="https://hywebu00.github.io/2025_gaze_Vue/#/portrait/launched_tab">管理者_含Tab</a></td>
+        </tr>
+      </table>
     </div>
   </div>
 </template>
@@ -131,12 +144,6 @@ export default {
           title: '2-6.管理者_模擬借閱',
           name: '	2-6.Admin_simulation.html	',
           fileLandscape: 'https://hywebu00.github.io/2025_gaze_Vue/#/simulation',
-          filePortrait: '',
-        },
-        {
-          title: '📌 管理者_含Tab',
-          name: '	2-4.Admin_launched_tab.html',
-          fileLandscape: 'https://hywebu00.github.io/2025_gaze_Vue/#/launched_tab',
           filePortrait: '',
         },
         {

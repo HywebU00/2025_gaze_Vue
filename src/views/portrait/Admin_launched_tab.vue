@@ -1,23 +1,17 @@
 <template>
   <div class="">
     <div class="content">
-      <div class="caseBlock">
-        <!-- 左側文字 start -->
+      <div class="caseBlock portrait">
+        <!-- 上方文字 start -->
         <div class="topText launch">
-          <div class="hand"><img src="~@/images/landscape/hand5.png" alt="" /></div>
+          <div class="hand"><img src="@/images/portrait/hand5.png" alt="" /></div>
           <div class="text">
             感應閱讀器設備條碼<br />
             系統將指示對應櫃位
           </div>
-          <div class="btn">
-            <a href="2-1.Admin_home.html" class="greyBtn">返回</a>
-            <a href="2-1.Admin_home.html" class="yellowBtn">確認</a>
-          </div>
         </div>
-        <!-- 左側文字 end -->
-        <!-- 右側機器 start -->
-
-        <div class="bottomCase tabCase">
+        <!-- 上方文字 end -->
+        <div class="tabCase">
           <div class="caseTab">
             <!-- 頁籤 -->
             <div class="tabs">
@@ -162,14 +156,12 @@
               </div>
             </div>
           </div>
-          <!-- <div class="caseLegend">
-            <div class="legend empty">空櫃</div>
-            <div class="legend available">可使用</div>
-            <div class="legend disable">停用</div>
-          </div> -->
         </div>
-        <!-- 右側機器 end -->
       </div>
+    </div>
+    <div class="btn">
+      <a href="2-1.Admin_home.html" class="greyBtn">返回</a>
+      <a href="2-1.Admin_home.html" class="yellowBtn">確認</a>
     </div>
   </div>
 </template>
@@ -181,10 +173,6 @@ export default {
       currentTab: 0,
       tabs: ['直立式48格', '桌上型8格', '桌上型8+12格'],
     };
-  },
-  mounted() {
-    // 在這裡主動通知父層：想顯示 member
-    this.$emit('set-member-visible', true);
   },
 };
 </script>
