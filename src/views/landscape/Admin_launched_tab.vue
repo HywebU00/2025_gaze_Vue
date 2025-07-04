@@ -3,7 +3,7 @@
     <div class="content">
       <div class="caseBlock">
         <!-- 左側文字 start -->
-        <div class="topText launch">
+        <div class="leftText launch">
           <div class="hand"><img src="~@/images/landscape/hand5.png" alt="" /></div>
           <div class="text">
             感應閱讀器設備條碼<br />
@@ -17,7 +17,7 @@
         <!-- 左側文字 end -->
         <!-- 右側機器 start -->
 
-        <div class="bottomCase tabCase">
+        <div class="rightCase tabCase">
           <div class="caseTab">
             <!-- 頁籤 -->
             <div class="tabs">
