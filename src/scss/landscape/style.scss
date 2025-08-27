@@ -352,6 +352,9 @@ body {
       color: $textColor;
     }
     &.empty {
+      a {
+        cursor: default;
+      }
       .pic {
         img {
           opacity: 0.6;
