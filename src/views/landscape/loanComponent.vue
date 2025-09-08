@@ -73,6 +73,11 @@
             <div class="case">47</div>
             <div class="case">48</div>
           </div>
+          <div class="legend">
+            <div class="empty">空櫃</div>
+            <div class="available">可使用</div>
+            <div class="disable">停用</div>
+          </div>
         </div>
         <!-- 右側機器 end -->
         <!-- 秒數倒數 start -->
