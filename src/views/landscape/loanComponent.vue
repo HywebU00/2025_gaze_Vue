@@ -8,7 +8,7 @@
           <div class="text">
             號櫃已開啟<br />
             請拔掉充電線取出閱讀器<br />
-            並將櫃門關上
+            <span class="errorText">用畢櫃檯歸還並將櫃門關上</span>
           </div>
           <div class="btn">
             <a href="1-1.User_welcome.html" class="yellowBtn">我已取出</a>
@@ -75,6 +75,9 @@
           </div>
         </div>
         <!-- 右側機器 end -->
+        <!-- 秒數倒數 start -->
+        <div class="countDown"><span class="errorText">60</span>秒</div>
+        <!-- 秒數倒數 end -->
       </div>
     </div>
   </div>
